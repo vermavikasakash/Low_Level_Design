@@ -1,11 +1,11 @@
-public class OrderSystem {
+public class OrderFacade {
 
     private InventoryService inventoryService;
     private PaymentService paymentService;
     private OrderService orderService;
     private NotificationService notificationService;
 
-    public OrderSystem(InventoryService inventoryService, PaymentService paymentService, OrderService orderService, NotificationService notificationService) {
+    public OrderFacade(InventoryService inventoryService, PaymentService paymentService, OrderService orderService, NotificationService notificationService) {
         this.inventoryService = inventoryService;
         this.paymentService = paymentService;
         this.orderService = orderService;

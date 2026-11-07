@@ -7,7 +7,7 @@ public class Main {
         OrderService order = new OrderService();
         NotificationService notification = new NotificationService();
 
-        OrderSystem orderSystem = new OrderSystem(inventory, payment, order, notification);
+        OrderFacade orderSystem = new OrderFacade(inventory, payment, order, notification);
 
         orderSystem.placeOrder(101, 5000);
     }
